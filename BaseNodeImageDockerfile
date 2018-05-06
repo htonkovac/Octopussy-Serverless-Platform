@@ -1,0 +1,12 @@
+FROM node:9.11
+ARG lambda_name
+WORKDIR /usr/src/app
+COPY ./BaseNodeImage .
+COPY "./Lambdas/$lambda_name" lambda/ 
+VOLUME /usr/local/lib/node_modules
+#more work is requreid for running modules as a volume
+
+ENV PORT 80
+RUN npm install
+EXPOSE 80
+CMD ["node", "server.js"]
