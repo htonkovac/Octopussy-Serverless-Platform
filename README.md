@@ -1,2 +1,2 @@
-# Octopussy-Serverless-Platform
-Octopussy is a serverless platform running and provisoning Lambda funtions written in NodeJS
+Serverless-Platform
+Serverless platform running and provisoning Lambda funtions written in NodeJS
